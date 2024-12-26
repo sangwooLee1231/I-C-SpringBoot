@@ -26,7 +26,7 @@ public class Spring2Application implements CommandLineRunner {
         String port = environment.getProperty("server.port","8888");
         System.out.println("======================");
         System.out.println("스프링 부트 프로젝트 시작됨");
-        System.out.println("http://localhost:8888" + port);
+        System.out.println("http://localhost:8888");
         System.out.println("======================");
     }
 }

@@ -2,6 +2,7 @@ package org.example.spring2;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 //스프링프로젝트에서 controller 등록
