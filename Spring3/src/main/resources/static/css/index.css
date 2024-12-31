@@ -1,0 +1,33 @@
+
+ body {
+     font-family: Arial, sans-serif;
+     margin: 0;
+     padding: 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     background-color: #f4f4f4;
+ }
+
+a {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+a:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+a:active {
+    background-color: #003f8a;
+    transform: translateY(1px);
+}

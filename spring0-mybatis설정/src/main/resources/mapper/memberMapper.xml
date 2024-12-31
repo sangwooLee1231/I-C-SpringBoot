@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.spring4.member.dao.MemberMapper">
+<!--    MemberMapper.java와 연결이 됨.-->
+
+
+    <insert id="insertMember">
+
+    </insert>
+    <update id="updateMember"></update>
+    <delete id="deleteMember"></delete>
+    <select id="selectMemberById"
+            resultType="com.example.spring4.member.vo.MemberVO">
+
+    </select>
+    <select id="selectMemberAll"
+            resultType="com.example.spring4.member.vo.MemberVO">
+
+    </select>
+</mapper>

@@ -6,13 +6,25 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="/css/product2.css">
+
 </head>
 <body>
-
-    <h3 th:text="${product.id}"></h3>
-    <h3 th:text="${product.title}"></h3>
-    <h3 th:text="${product.content}"></h3>
-    <h3 th:text="${product.price}"></h3>
-
+<div class="container">
+    <table>
+        <tr>
+            <td>아이디 :<span th:text="${product.id}"></span></td>
+        </tr>
+        <tr>
+            <td>제목 :<span th:text="${product.title}"></span></td>
+        </tr>
+        <tr>
+            <td>내용 :<span th:text="${product.content}"></span></td>
+        </tr>
+        <tr>
+            <td>금액 :<span th:text="${product.price}"></span></td>
+        </tr>
+    </table>
+</div>
 </body>
 </html>
