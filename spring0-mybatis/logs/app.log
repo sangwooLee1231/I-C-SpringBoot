@@ -1,0 +1,857 @@
+2025-01-02 17:28:14 [restartedMain] INFO  c.example.spring4.Spring4Application - Starting Spring4Application using Java 17 with PID 8456 (C:\New_java\I-C-SpringBoot\spring0-mybatis\spring0-mybatis\build\classes\java\main started by a in C:\New_java\I-C-SpringBoot\spring0-mybatis)
+2025-01-02 17:28:14 [restartedMain] DEBUG c.example.spring4.Spring4Application - Running with Spring Boot v3.0.2, Spring v6.0.4
+2025-01-02 17:28:14 [restartedMain] INFO  c.example.spring4.Spring4Application - No active profile set, falling back to 1 default profile: "default"
+2025-01-02 17:28:15 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-02 17:28:15 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-02 17:28:15 [restartedMain] DEBUG o.m.s.b.a.MybatisAutoConfiguration - Searching for mappers annotated with @Mapper
+2025-01-02 17:28:15 [restartedMain] DEBUG o.m.s.b.a.MybatisAutoConfiguration - Using auto-configuration base package 'com.example.spring4'
+2025-01-02 17:28:16 [restartedMain] DEBUG o.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2025-01-02 17:28:16 [restartedMain] DEBUG o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\New_java\I-C-SpringBoot\spring0-mybatis\spring0-mybatis\build\classes\java\main\com\example\spring4\board\dao\BoardMapper.class]
+2025-01-02 17:28:16 [restartedMain] DEBUG o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\New_java\I-C-SpringBoot\spring0-mybatis\spring0-mybatis\build\classes\java\main\com\example\spring4\member\dao\MemberMapper.class]
+2025-01-02 17:28:16 [restartedMain] DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'boardMapper' and 'com.example.spring4.board.dao.BoardMapper' mapperInterface
+2025-01-02 17:28:16 [restartedMain] DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'memberMapper' and 'com.example.spring4.member.dao.MemberMapper' mapperInterface
+2025-01-02 17:28:16 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2025-01-02 17:28:16 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-01-02 17:28:16 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.5]
+2025-01-02 17:28:16 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-01-02 17:28:16 [restartedMain] DEBUG o.s.w.f.ServerHttpObservationFilter - Filter 'serverHttpObservationFilter' configured for use
+2025-01-02 17:28:17 [restartedMain] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\New_java\I-C-SpringBoot\spring0-mybatis\spring0-mybatis\build\resources\main\mapper\BoardMapper.xml]'
+2025-01-02 17:28:17 [restartedMain] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\New_java\I-C-SpringBoot\spring0-mybatis\spring0-mybatis\build\resources\main\mapper\memberMapper.xml]'
+2025-01-02 17:28:17 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-01-02 17:28:17 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2025-01-02 17:28:17 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 12 mappings in 'requestMappingHandlerMapping'
+2025-01-02 17:28:17 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-01-02 17:28:17 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-01-02 17:28:17 [restartedMain] DEBUG o.m.s.b.a.MybatisAutoConfiguration - Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+2025-01-02 17:28:17 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-01-02 17:28:17 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-01-02 17:28:17 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2025-01-02 17:28:17 [restartedMain] INFO  c.example.spring4.Spring4Application - Started Spring4Application in 3.69 seconds (process running for 4.671)
+2025-01-02 17:28:18 [RMI TCP Connection(2)-192.168.56.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-02 17:28:18 [RMI TCP Connection(2)-192.168.56.1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-01-02 17:28:18 [RMI TCP Connection(2)-192.168.56.1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2025-01-02 17:28:18 [RMI TCP Connection(2)-192.168.56.1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2025-01-02 17:28:18 [RMI TCP Connection(2)-192.168.56.1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2025-01-02 17:28:18 [RMI TCP Connection(2)-192.168.56.1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@19fc5024
+2025-01-02 17:28:18 [RMI TCP Connection(3)-192.168.56.1] INFO  com.zaxxer.hikari.HikariDataSource - MyHikariPool Alive Connection =========== 10 =========== - Starting...
+2025-01-02 17:28:18 [RMI TCP Connection(2)-192.168.56.1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@38dec4ef
+2025-01-02 17:28:18 [RMI TCP Connection(2)-192.168.56.1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-01-02 17:28:18 [RMI TCP Connection(2)-192.168.56.1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2025-01-02 17:28:18 [RMI TCP Connection(3)-192.168.56.1] INFO  com.zaxxer.hikari.pool.HikariPool - MyHikariPool Alive Connection =========== 10 =========== - Added connection com.mysql.cj.jdbc.ConnectionImpl@7d1c8e0c
+2025-01-02 17:28:18 [RMI TCP Connection(3)-192.168.56.1] INFO  com.zaxxer.hikari.HikariDataSource - MyHikariPool Alive Connection =========== 10 =========== - Start completed.
+2025-01-02 17:28:20 [http-nio-8888-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+2025-01-02 17:28:20 [http-nio-8888-exec-1] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-01-02 17:28:21 [http-nio-8888-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:28:21 [http-nio-8888-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/style.css", parameters={}
+2025-01-02 17:28:21 [http-nio-8888-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/coffee.png", parameters={}
+2025-01-02 17:28:21 [http-nio-8888-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:28:21 [http-nio-8888-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:28:21 [http-nio-8888-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:28:21 [http-nio-8888-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:28:22 [http-nio-8888-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/scripts.js", parameters={}
+2025-01-02 17:28:22 [http-nio-8888-exec-5] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:28:22 [http-nio-8888-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/member.png", parameters={}
+2025-01-02 17:28:22 [http-nio-8888-exec-6] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:28:22 [http-nio-8888-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/bye.png", parameters={}
+2025-01-02 17:28:22 [http-nio-8888-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/board.png", parameters={}
+2025-01-02 17:28:22 [http-nio-8888-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:28:22 [http-nio-8888-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:28:22 [http-nio-8888-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:28:22 [http-nio-8888-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:28:22 [http-nio-8888-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/product.png", parameters={}
+2025-01-02 17:28:22 [http-nio-8888-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/cart.png", parameters={}
+2025-01-02 17:28:22 [http-nio-8888-exec-8] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:28:22 [http-nio-8888-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:28:22 [http-nio-8888-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:28:22 [http-nio-8888-exec-9] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:28:22 [http-nio-8888-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:28:22 [http-nio-8888-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/coffee.png", parameters={}
+2025-01-02 17:28:22 [http-nio-8888-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:28:22 [http-nio-8888-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:28:22 [http-nio-8888-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:28:22 [http-nio-8888-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/assets/favicon.ico", parameters={}
+2025-01-02 17:28:22 [http-nio-8888-exec-10] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:28:22 [http-nio-8888-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:28:23 [http-nio-8888-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/member/member", parameters={}
+2025-01-02 17:28:23 [http-nio-8888-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.spring4.member.controller.MemberController#member()
+2025-01-02 17:28:23 [http-nio-8888-exec-1] INFO  c.e.s.m.controller.MemberController - 로그인 화면 요청 로그 기록 >>>>>>>>>
+2025-01-02 17:28:23 [http-nio-8888-exec-1] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-01-02 17:28:23 [http-nio-8888-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:28:23 [http-nio-8888-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/style.css", parameters={}
+2025-01-02 17:28:23 [http-nio-8888-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:28:23 [http-nio-8888-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/scripts.js", parameters={}
+2025-01-02 17:28:23 [http-nio-8888-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/coffee.png", parameters={}
+2025-01-02 17:28:23 [http-nio-8888-exec-6] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:28:23 [http-nio-8888-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:28:23 [http-nio-8888-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:28:23 [http-nio-8888-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:28:23 [http-nio-8888-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:28:23 [http-nio-8888-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/bye.png", parameters={}
+2025-01-02 17:28:23 [http-nio-8888-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/board.png", parameters={}
+2025-01-02 17:28:23 [http-nio-8888-exec-5] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:28:23 [http-nio-8888-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/cart.png", parameters={}
+2025-01-02 17:28:23 [http-nio-8888-exec-9] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:28:23 [http-nio-8888-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/member.png", parameters={}
+2025-01-02 17:28:23 [http-nio-8888-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:28:23 [http-nio-8888-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/product.png", parameters={}
+2025-01-02 17:28:23 [http-nio-8888-exec-8] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:28:23 [http-nio-8888-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:28:23 [http-nio-8888-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:28:23 [http-nio-8888-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:28:23 [http-nio-8888-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:28:23 [http-nio-8888-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:28:23 [http-nio-8888-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:28:23 [http-nio-8888-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/assets/favicon.ico", parameters={}
+2025-01-02 17:28:23 [http-nio-8888-exec-10] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:28:23 [http-nio-8888-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:28:23 [http-nio-8888-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/board/board", parameters={}
+2025-01-02 17:28:23 [http-nio-8888-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:28:23 [http-nio-8888-exec-1] DEBUG o.s.w.s.r.ResourceHttpRequestHandler - Resource not found
+2025-01-02 17:28:23 [http-nio-8888-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 404 NOT_FOUND
+2025-01-02 17:28:23 [http-nio-8888-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - "ERROR" dispatch for GET "/error", parameters={}
+2025-01-02 17:28:23 [http-nio-8888-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2025-01-02 17:28:23 [http-nio-8888-exec-1] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, text/html;q=0.8]
+2025-01-02 17:28:23 [http-nio-8888-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Exiting from "ERROR" dispatch, status 404
+2025-01-02 17:28:29 [http-nio-8888-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - POST "/member/login", parameters={masked}
+2025-01-02 17:28:29 [http-nio-8888-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.spring4.member.controller.MemberController#login(MemberVO, HttpSession, Model)
+2025-01-02 17:28:29 [http-nio-8888-exec-2] INFO  c.e.s.m.controller.MemberController - 로그인 정보 요청 기록 >>>>>>>>> MemberVO(id=apple, pw=1234, name=null, tel=null)
+2025-01-02 17:28:29 [http-nio-8888-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-02 17:28:29 [http-nio-8888-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@33ad482f] was not registered for synchronization because synchronization is not active
+2025-01-02 17:28:29 [http-nio-8888-exec-2] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@948334413 wrapping com.mysql.cj.jdbc.ConnectionImpl@7d1c8e0c] will not be managed by Spring
+2025-01-02 17:28:29 [http-nio-8888-exec-2] DEBUG c.e.s.m.d.M.selectMemberById - ==>  Preparing: select * from member where id = ?
+2025-01-02 17:28:29 [http-nio-8888-exec-2] DEBUG c.e.s.m.d.M.selectMemberById - ==> Parameters: apple(String)
+2025-01-02 17:28:30 [http-nio-8888-exec-2] DEBUG c.e.s.m.d.M.selectMemberById - <==      Total: 1
+2025-01-02 17:28:30 [http-nio-8888-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@33ad482f]
+2025-01-02 17:28:30 [http-nio-8888-exec-2] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-01-02 17:28:30 [http-nio-8888-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:28:30 [http-nio-8888-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/style.css", parameters={}
+2025-01-02 17:28:30 [http-nio-8888-exec-6] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:28:30 [http-nio-8888-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/coffee.png", parameters={}
+2025-01-02 17:28:30 [http-nio-8888-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/bye.png", parameters={}
+2025-01-02 17:28:30 [http-nio-8888-exec-5] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:28:30 [http-nio-8888-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:28:30 [http-nio-8888-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:28:30 [http-nio-8888-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:28:30 [http-nio-8888-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:28:30 [http-nio-8888-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/scripts.js", parameters={}
+2025-01-02 17:28:30 [http-nio-8888-exec-9] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:28:30 [http-nio-8888-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/board.png", parameters={}
+2025-01-02 17:28:30 [http-nio-8888-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/member.png", parameters={}
+2025-01-02 17:28:30 [http-nio-8888-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/cart.png", parameters={}
+2025-01-02 17:28:30 [http-nio-8888-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/product.png", parameters={}
+2025-01-02 17:28:30 [http-nio-8888-exec-8] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:28:30 [http-nio-8888-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:28:30 [http-nio-8888-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:28:30 [http-nio-8888-exec-10] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:28:30 [http-nio-8888-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:28:30 [http-nio-8888-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:28:30 [http-nio-8888-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:28:30 [http-nio-8888-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:28:30 [http-nio-8888-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:28:30 [http-nio-8888-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/bye.png", parameters={}
+2025-01-02 17:28:30 [http-nio-8888-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:28:30 [http-nio-8888-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:28:30 [http-nio-8888-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/assets/favicon.ico", parameters={}
+2025-01-02 17:28:30 [http-nio-8888-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:28:30 [http-nio-8888-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:34:22 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2025-01-02 17:34:22 [Thread-5] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-01-02 17:34:22 [Thread-5] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2025-01-02 17:34:22 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - MyHikariPool Alive Connection =========== 10 =========== - Shutdown initiated...
+2025-01-02 17:34:22 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - MyHikariPool Alive Connection =========== 10 =========== - Shutdown completed.
+2025-01-02 17:34:22 [restartedMain] INFO  c.example.spring4.Spring4Application - Starting Spring4Application using Java 17 with PID 8456 (C:\New_java\I-C-SpringBoot\spring0-mybatis\spring0-mybatis\build\classes\java\main started by a in C:\New_java\I-C-SpringBoot\spring0-mybatis)
+2025-01-02 17:34:22 [restartedMain] DEBUG c.example.spring4.Spring4Application - Running with Spring Boot v3.0.2, Spring v6.0.4
+2025-01-02 17:34:22 [restartedMain] INFO  c.example.spring4.Spring4Application - No active profile set, falling back to 1 default profile: "default"
+2025-01-02 17:34:23 [restartedMain] DEBUG o.m.s.b.a.MybatisAutoConfiguration - Searching for mappers annotated with @Mapper
+2025-01-02 17:34:23 [restartedMain] DEBUG o.m.s.b.a.MybatisAutoConfiguration - Using auto-configuration base package 'com.example.spring4'
+2025-01-02 17:34:23 [restartedMain] DEBUG o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\New_java\I-C-SpringBoot\spring0-mybatis\spring0-mybatis\build\classes\java\main\com\example\spring4\board\dao\BoardMapper.class]
+2025-01-02 17:34:23 [restartedMain] DEBUG o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\New_java\I-C-SpringBoot\spring0-mybatis\spring0-mybatis\build\classes\java\main\com\example\spring4\member\dao\MemberMapper.class]
+2025-01-02 17:34:23 [restartedMain] DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'boardMapper' and 'com.example.spring4.board.dao.BoardMapper' mapperInterface
+2025-01-02 17:34:23 [restartedMain] DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'memberMapper' and 'com.example.spring4.member.dao.MemberMapper' mapperInterface
+2025-01-02 17:34:23 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2025-01-02 17:34:23 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-01-02 17:34:23 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.5]
+2025-01-02 17:34:23 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-01-02 17:34:23 [restartedMain] DEBUG o.s.w.f.ServerHttpObservationFilter - Filter 'serverHttpObservationFilter' configured for use
+2025-01-02 17:34:23 [restartedMain] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\New_java\I-C-SpringBoot\spring0-mybatis\spring0-mybatis\build\resources\main\mapper\BoardMapper.xml]'
+2025-01-02 17:34:23 [restartedMain] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\New_java\I-C-SpringBoot\spring0-mybatis\spring0-mybatis\build\resources\main\mapper\memberMapper.xml]'
+2025-01-02 17:34:23 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-01-02 17:34:23 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2025-01-02 17:34:23 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 12 mappings in 'requestMappingHandlerMapping'
+2025-01-02 17:34:23 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-01-02 17:34:23 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-01-02 17:34:23 [restartedMain] DEBUG o.m.s.b.a.MybatisAutoConfiguration - Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+2025-01-02 17:34:23 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-01-02 17:34:23 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-01-02 17:34:23 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2025-01-02 17:34:23 [restartedMain] INFO  c.example.spring4.Spring4Application - Started Spring4Application in 1.07 seconds (process running for 370.555)
+2025-01-02 17:34:23 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-01-02 17:34:25 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-01-02 17:34:25 [Thread-7] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-01-02 17:34:25 [restartedMain] INFO  c.example.spring4.Spring4Application - Starting Spring4Application using Java 17 with PID 8456 (C:\New_java\I-C-SpringBoot\spring0-mybatis\spring0-mybatis\build\classes\java\main started by a in C:\New_java\I-C-SpringBoot\spring0-mybatis)
+2025-01-02 17:34:25 [restartedMain] DEBUG c.example.spring4.Spring4Application - Running with Spring Boot v3.0.2, Spring v6.0.4
+2025-01-02 17:34:25 [restartedMain] INFO  c.example.spring4.Spring4Application - No active profile set, falling back to 1 default profile: "default"
+2025-01-02 17:34:25 [restartedMain] DEBUG o.m.s.b.a.MybatisAutoConfiguration - Searching for mappers annotated with @Mapper
+2025-01-02 17:34:25 [restartedMain] DEBUG o.m.s.b.a.MybatisAutoConfiguration - Using auto-configuration base package 'com.example.spring4'
+2025-01-02 17:34:25 [restartedMain] DEBUG o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\New_java\I-C-SpringBoot\spring0-mybatis\spring0-mybatis\build\classes\java\main\com\example\spring4\board\dao\BoardMapper.class]
+2025-01-02 17:34:25 [restartedMain] DEBUG o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\New_java\I-C-SpringBoot\spring0-mybatis\spring0-mybatis\build\classes\java\main\com\example\spring4\member\dao\MemberMapper.class]
+2025-01-02 17:34:25 [restartedMain] DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'boardMapper' and 'com.example.spring4.board.dao.BoardMapper' mapperInterface
+2025-01-02 17:34:25 [restartedMain] DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'memberMapper' and 'com.example.spring4.member.dao.MemberMapper' mapperInterface
+2025-01-02 17:34:25 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2025-01-02 17:34:25 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-01-02 17:34:25 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.5]
+2025-01-02 17:34:25 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-01-02 17:34:25 [restartedMain] DEBUG o.s.w.f.ServerHttpObservationFilter - Filter 'serverHttpObservationFilter' configured for use
+2025-01-02 17:34:25 [restartedMain] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\New_java\I-C-SpringBoot\spring0-mybatis\spring0-mybatis\build\resources\main\mapper\BoardMapper.xml]'
+2025-01-02 17:34:25 [restartedMain] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\New_java\I-C-SpringBoot\spring0-mybatis\spring0-mybatis\build\resources\main\mapper\memberMapper.xml]'
+2025-01-02 17:34:25 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-01-02 17:34:25 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2025-01-02 17:34:25 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 12 mappings in 'requestMappingHandlerMapping'
+2025-01-02 17:34:25 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-01-02 17:34:25 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-01-02 17:34:25 [restartedMain] DEBUG o.m.s.b.a.MybatisAutoConfiguration - Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+2025-01-02 17:34:25 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-01-02 17:34:25 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-01-02 17:34:25 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2025-01-02 17:34:25 [restartedMain] INFO  c.example.spring4.Spring4Application - Started Spring4Application in 0.689 seconds (process running for 372.75)
+2025-01-02 17:34:25 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-01-02 17:34:29 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2025-01-02 17:34:29 [Thread-11] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-01-02 17:34:29 [restartedMain] INFO  c.example.spring4.Spring4Application - Starting Spring4Application using Java 17 with PID 8456 (C:\New_java\I-C-SpringBoot\spring0-mybatis\spring0-mybatis\build\classes\java\main started by a in C:\New_java\I-C-SpringBoot\spring0-mybatis)
+2025-01-02 17:34:29 [restartedMain] DEBUG c.example.spring4.Spring4Application - Running with Spring Boot v3.0.2, Spring v6.0.4
+2025-01-02 17:34:29 [restartedMain] INFO  c.example.spring4.Spring4Application - No active profile set, falling back to 1 default profile: "default"
+2025-01-02 17:34:29 [restartedMain] DEBUG o.m.s.b.a.MybatisAutoConfiguration - Searching for mappers annotated with @Mapper
+2025-01-02 17:34:29 [restartedMain] DEBUG o.m.s.b.a.MybatisAutoConfiguration - Using auto-configuration base package 'com.example.spring4'
+2025-01-02 17:34:29 [restartedMain] DEBUG o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\New_java\I-C-SpringBoot\spring0-mybatis\spring0-mybatis\build\classes\java\main\com\example\spring4\board\dao\BoardMapper.class]
+2025-01-02 17:34:29 [restartedMain] DEBUG o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\New_java\I-C-SpringBoot\spring0-mybatis\spring0-mybatis\build\classes\java\main\com\example\spring4\member\dao\MemberMapper.class]
+2025-01-02 17:34:29 [restartedMain] DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'boardMapper' and 'com.example.spring4.board.dao.BoardMapper' mapperInterface
+2025-01-02 17:34:29 [restartedMain] DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'memberMapper' and 'com.example.spring4.member.dao.MemberMapper' mapperInterface
+2025-01-02 17:34:29 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2025-01-02 17:34:29 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-01-02 17:34:29 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.5]
+2025-01-02 17:34:29 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-01-02 17:34:29 [restartedMain] DEBUG o.s.w.f.ServerHttpObservationFilter - Filter 'serverHttpObservationFilter' configured for use
+2025-01-02 17:34:30 [restartedMain] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\New_java\I-C-SpringBoot\spring0-mybatis\spring0-mybatis\build\resources\main\mapper\BoardMapper.xml]'
+2025-01-02 17:34:30 [restartedMain] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\New_java\I-C-SpringBoot\spring0-mybatis\spring0-mybatis\build\resources\main\mapper\memberMapper.xml]'
+2025-01-02 17:34:30 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-01-02 17:34:30 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2025-01-02 17:34:30 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 12 mappings in 'requestMappingHandlerMapping'
+2025-01-02 17:34:30 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-01-02 17:34:30 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-01-02 17:34:30 [restartedMain] DEBUG o.m.s.b.a.MybatisAutoConfiguration - Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+2025-01-02 17:34:30 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-01-02 17:34:30 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-01-02 17:34:30 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2025-01-02 17:34:30 [restartedMain] INFO  c.example.spring4.Spring4Application - Started Spring4Application in 0.792 seconds (process running for 377.134)
+2025-01-02 17:34:30 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-01-02 17:34:31 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-01-02 17:34:31 [Thread-15] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-01-02 17:34:31 [restartedMain] INFO  c.example.spring4.Spring4Application - Starting Spring4Application using Java 17 with PID 8456 (C:\New_java\I-C-SpringBoot\spring0-mybatis\spring0-mybatis\build\classes\java\main started by a in C:\New_java\I-C-SpringBoot\spring0-mybatis)
+2025-01-02 17:34:31 [restartedMain] DEBUG c.example.spring4.Spring4Application - Running with Spring Boot v3.0.2, Spring v6.0.4
+2025-01-02 17:34:31 [restartedMain] INFO  c.example.spring4.Spring4Application - No active profile set, falling back to 1 default profile: "default"
+2025-01-02 17:34:31 [restartedMain] DEBUG o.m.s.b.a.MybatisAutoConfiguration - Searching for mappers annotated with @Mapper
+2025-01-02 17:34:31 [restartedMain] DEBUG o.m.s.b.a.MybatisAutoConfiguration - Using auto-configuration base package 'com.example.spring4'
+2025-01-02 17:34:32 [restartedMain] DEBUG o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\New_java\I-C-SpringBoot\spring0-mybatis\spring0-mybatis\build\classes\java\main\com\example\spring4\board\dao\BoardMapper.class]
+2025-01-02 17:34:32 [restartedMain] DEBUG o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\New_java\I-C-SpringBoot\spring0-mybatis\spring0-mybatis\build\classes\java\main\com\example\spring4\member\dao\MemberMapper.class]
+2025-01-02 17:34:32 [restartedMain] DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'boardMapper' and 'com.example.spring4.board.dao.BoardMapper' mapperInterface
+2025-01-02 17:34:32 [restartedMain] DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'memberMapper' and 'com.example.spring4.member.dao.MemberMapper' mapperInterface
+2025-01-02 17:34:32 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2025-01-02 17:34:32 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-01-02 17:34:32 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.5]
+2025-01-02 17:34:32 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-01-02 17:34:32 [restartedMain] DEBUG o.s.w.f.ServerHttpObservationFilter - Filter 'serverHttpObservationFilter' configured for use
+2025-01-02 17:34:32 [restartedMain] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\New_java\I-C-SpringBoot\spring0-mybatis\spring0-mybatis\build\resources\main\mapper\BoardMapper.xml]'
+2025-01-02 17:34:32 [restartedMain] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\New_java\I-C-SpringBoot\spring0-mybatis\spring0-mybatis\build\resources\main\mapper\memberMapper.xml]'
+2025-01-02 17:34:32 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-01-02 17:34:32 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2025-01-02 17:34:32 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 12 mappings in 'requestMappingHandlerMapping'
+2025-01-02 17:34:32 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-01-02 17:34:32 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-01-02 17:34:32 [restartedMain] DEBUG o.m.s.b.a.MybatisAutoConfiguration - Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+2025-01-02 17:34:32 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-01-02 17:34:32 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-01-02 17:34:32 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2025-01-02 17:34:32 [restartedMain] INFO  c.example.spring4.Spring4Application - Started Spring4Application in 0.776 seconds (process running for 379.395)
+2025-01-02 17:34:32 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-01-02 17:34:45 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2025-01-02 17:34:45 [Thread-19] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-01-02 17:34:45 [restartedMain] INFO  c.example.spring4.Spring4Application - Starting Spring4Application using Java 17 with PID 8456 (C:\New_java\I-C-SpringBoot\spring0-mybatis\spring0-mybatis\build\classes\java\main started by a in C:\New_java\I-C-SpringBoot\spring0-mybatis)
+2025-01-02 17:34:45 [restartedMain] DEBUG c.example.spring4.Spring4Application - Running with Spring Boot v3.0.2, Spring v6.0.4
+2025-01-02 17:34:45 [restartedMain] INFO  c.example.spring4.Spring4Application - No active profile set, falling back to 1 default profile: "default"
+2025-01-02 17:34:46 [restartedMain] DEBUG o.m.s.b.a.MybatisAutoConfiguration - Searching for mappers annotated with @Mapper
+2025-01-02 17:34:46 [restartedMain] DEBUG o.m.s.b.a.MybatisAutoConfiguration - Using auto-configuration base package 'com.example.spring4'
+2025-01-02 17:34:46 [restartedMain] DEBUG o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\New_java\I-C-SpringBoot\spring0-mybatis\spring0-mybatis\build\classes\java\main\com\example\spring4\board\dao\BoardMapper.class]
+2025-01-02 17:34:46 [restartedMain] DEBUG o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\New_java\I-C-SpringBoot\spring0-mybatis\spring0-mybatis\build\classes\java\main\com\example\spring4\member\dao\MemberMapper.class]
+2025-01-02 17:34:46 [restartedMain] DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'boardMapper' and 'com.example.spring4.board.dao.BoardMapper' mapperInterface
+2025-01-02 17:34:46 [restartedMain] DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'memberMapper' and 'com.example.spring4.member.dao.MemberMapper' mapperInterface
+2025-01-02 17:34:46 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2025-01-02 17:34:46 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-01-02 17:34:46 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.5]
+2025-01-02 17:34:46 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-01-02 17:34:46 [restartedMain] DEBUG o.s.w.f.ServerHttpObservationFilter - Filter 'serverHttpObservationFilter' configured for use
+2025-01-02 17:34:46 [restartedMain] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\New_java\I-C-SpringBoot\spring0-mybatis\spring0-mybatis\build\resources\main\mapper\BoardMapper.xml]'
+2025-01-02 17:34:46 [restartedMain] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\New_java\I-C-SpringBoot\spring0-mybatis\spring0-mybatis\build\resources\main\mapper\memberMapper.xml]'
+2025-01-02 17:34:46 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-01-02 17:34:47 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2025-01-02 17:34:47 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 12 mappings in 'requestMappingHandlerMapping'
+2025-01-02 17:34:47 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-01-02 17:34:47 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-01-02 17:34:47 [restartedMain] DEBUG o.m.s.b.a.MybatisAutoConfiguration - Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+2025-01-02 17:34:47 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-01-02 17:34:47 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-01-02 17:34:47 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2025-01-02 17:34:47 [restartedMain] INFO  c.example.spring4.Spring4Application - Started Spring4Application in 2.121 seconds (process running for 394.384)
+2025-01-02 17:34:47 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-01-02 17:34:50 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2025-01-02 17:34:50 [Thread-23] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-01-02 17:34:50 [restartedMain] INFO  c.example.spring4.Spring4Application - Starting Spring4Application using Java 17 with PID 8456 (C:\New_java\I-C-SpringBoot\spring0-mybatis\spring0-mybatis\build\classes\java\main started by a in C:\New_java\I-C-SpringBoot\spring0-mybatis)
+2025-01-02 17:34:50 [restartedMain] DEBUG c.example.spring4.Spring4Application - Running with Spring Boot v3.0.2, Spring v6.0.4
+2025-01-02 17:34:50 [restartedMain] INFO  c.example.spring4.Spring4Application - No active profile set, falling back to 1 default profile: "default"
+2025-01-02 17:34:51 [restartedMain] DEBUG o.m.s.b.a.MybatisAutoConfiguration - Searching for mappers annotated with @Mapper
+2025-01-02 17:34:51 [restartedMain] DEBUG o.m.s.b.a.MybatisAutoConfiguration - Using auto-configuration base package 'com.example.spring4'
+2025-01-02 17:34:51 [restartedMain] DEBUG o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\New_java\I-C-SpringBoot\spring0-mybatis\spring0-mybatis\build\classes\java\main\com\example\spring4\board\dao\BoardMapper.class]
+2025-01-02 17:34:51 [restartedMain] DEBUG o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\New_java\I-C-SpringBoot\spring0-mybatis\spring0-mybatis\build\classes\java\main\com\example\spring4\member\dao\MemberMapper.class]
+2025-01-02 17:34:51 [restartedMain] DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'boardMapper' and 'com.example.spring4.board.dao.BoardMapper' mapperInterface
+2025-01-02 17:34:51 [restartedMain] DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'memberMapper' and 'com.example.spring4.member.dao.MemberMapper' mapperInterface
+2025-01-02 17:34:51 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2025-01-02 17:34:51 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-01-02 17:34:51 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.5]
+2025-01-02 17:34:51 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-01-02 17:34:51 [restartedMain] DEBUG o.s.w.f.ServerHttpObservationFilter - Filter 'serverHttpObservationFilter' configured for use
+2025-01-02 17:34:51 [restartedMain] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\New_java\I-C-SpringBoot\spring0-mybatis\spring0-mybatis\build\resources\main\mapper\BoardMapper.xml]'
+2025-01-02 17:34:51 [restartedMain] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\New_java\I-C-SpringBoot\spring0-mybatis\spring0-mybatis\build\resources\main\mapper\memberMapper.xml]'
+2025-01-02 17:34:51 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-01-02 17:34:51 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2025-01-02 17:34:51 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 12 mappings in 'requestMappingHandlerMapping'
+2025-01-02 17:34:51 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-01-02 17:34:51 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-01-02 17:34:51 [restartedMain] DEBUG o.m.s.b.a.MybatisAutoConfiguration - Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+2025-01-02 17:34:52 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-01-02 17:34:52 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-01-02 17:34:52 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2025-01-02 17:34:52 [restartedMain] INFO  c.example.spring4.Spring4Application - Started Spring4Application in 1.334 seconds (process running for 399.074)
+2025-01-02 17:34:52 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-01-02 17:34:58 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2025-01-02 17:34:58 [Thread-27] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-01-02 17:34:58 [restartedMain] INFO  c.example.spring4.Spring4Application - Starting Spring4Application using Java 17 with PID 8456 (C:\New_java\I-C-SpringBoot\spring0-mybatis\spring0-mybatis\build\classes\java\main started by a in C:\New_java\I-C-SpringBoot\spring0-mybatis)
+2025-01-02 17:34:58 [restartedMain] DEBUG c.example.spring4.Spring4Application - Running with Spring Boot v3.0.2, Spring v6.0.4
+2025-01-02 17:34:58 [restartedMain] INFO  c.example.spring4.Spring4Application - No active profile set, falling back to 1 default profile: "default"
+2025-01-02 17:34:59 [restartedMain] DEBUG o.m.s.b.a.MybatisAutoConfiguration - Searching for mappers annotated with @Mapper
+2025-01-02 17:34:59 [restartedMain] DEBUG o.m.s.b.a.MybatisAutoConfiguration - Using auto-configuration base package 'com.example.spring4'
+2025-01-02 17:34:59 [restartedMain] DEBUG o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\New_java\I-C-SpringBoot\spring0-mybatis\spring0-mybatis\build\classes\java\main\com\example\spring4\board\dao\BoardMapper.class]
+2025-01-02 17:34:59 [restartedMain] DEBUG o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\New_java\I-C-SpringBoot\spring0-mybatis\spring0-mybatis\build\classes\java\main\com\example\spring4\member\dao\MemberMapper.class]
+2025-01-02 17:34:59 [restartedMain] DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'boardMapper' and 'com.example.spring4.board.dao.BoardMapper' mapperInterface
+2025-01-02 17:34:59 [restartedMain] DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'memberMapper' and 'com.example.spring4.member.dao.MemberMapper' mapperInterface
+2025-01-02 17:34:59 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2025-01-02 17:34:59 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-01-02 17:34:59 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.5]
+2025-01-02 17:35:00 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-01-02 17:35:00 [restartedMain] DEBUG o.s.w.f.ServerHttpObservationFilter - Filter 'serverHttpObservationFilter' configured for use
+2025-01-02 17:35:00 [restartedMain] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\New_java\I-C-SpringBoot\spring0-mybatis\spring0-mybatis\build\resources\main\mapper\BoardMapper.xml]'
+2025-01-02 17:35:00 [restartedMain] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\New_java\I-C-SpringBoot\spring0-mybatis\spring0-mybatis\build\resources\main\mapper\memberMapper.xml]'
+2025-01-02 17:35:00 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-01-02 17:35:00 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2025-01-02 17:35:00 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 12 mappings in 'requestMappingHandlerMapping'
+2025-01-02 17:35:00 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-01-02 17:35:00 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-01-02 17:35:00 [restartedMain] DEBUG o.m.s.b.a.MybatisAutoConfiguration - Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+2025-01-02 17:35:00 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-01-02 17:35:00 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-01-02 17:35:00 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2025-01-02 17:35:00 [restartedMain] INFO  c.example.spring4.Spring4Application - Started Spring4Application in 1.555 seconds (process running for 407.392)
+2025-01-02 17:35:00 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2025-01-02 17:35:22 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 13 class path changes (0 additions, 13 deletions, 0 modifications)
+2025-01-02 17:35:22 [Thread-31] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-01-02 17:35:22 [restartedMain] INFO  c.example.spring4.Spring4Application - Starting Spring4Application using Java 17 with PID 8456 (C:\New_java\I-C-SpringBoot\spring0-mybatis\spring0-mybatis\build\classes\java\main started by a in C:\New_java\I-C-SpringBoot\spring0-mybatis)
+2025-01-02 17:35:22 [restartedMain] DEBUG c.example.spring4.Spring4Application - Running with Spring Boot v3.0.2, Spring v6.0.4
+2025-01-02 17:35:22 [restartedMain] INFO  c.example.spring4.Spring4Application - No active profile set, falling back to 1 default profile: "default"
+2025-01-02 17:35:23 [restartedMain] DEBUG o.m.s.b.a.MybatisAutoConfiguration - Searching for mappers annotated with @Mapper
+2025-01-02 17:35:23 [restartedMain] DEBUG o.m.s.b.a.MybatisAutoConfiguration - Using auto-configuration base package 'com.example.spring4'
+2025-01-02 17:35:23 [restartedMain] WARN  o.m.s.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.example.spring4]' package. Please check your configuration.
+2025-01-02 17:35:23 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2025-01-02 17:35:23 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-01-02 17:35:23 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.5]
+2025-01-02 17:35:23 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-01-02 17:35:23 [restartedMain] DEBUG o.s.w.f.ServerHttpObservationFilter - Filter 'serverHttpObservationFilter' configured for use
+2025-01-02 17:35:23 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-01-02 17:35:23 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2025-01-02 17:35:23 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 2 mappings in 'requestMappingHandlerMapping'
+2025-01-02 17:35:23 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-01-02 17:35:23 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-01-02 17:35:23 [restartedMain] DEBUG o.m.s.b.a.MybatisAutoConfiguration - Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+2025-01-02 17:35:23 [restartedMain] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-01-02 17:35:23 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-01-02 17:35:23 [restartedMain] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception with message: Failed to parse mapping resource: 'file [C:\New_java\I-C-SpringBoot\spring0-mybatis\spring0-mybatis\build\resources\main\mapper\BoardMapper.xml]'
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:645) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1324) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1161) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:561) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:521) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:326) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:324) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:961) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:915) ~[spring-context-6.0.4.jar:6.0.4]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:584) ~[spring-context-6.0.4.jar:6.0.4]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.0.2.jar:3.0.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:730) ~[spring-boot-3.0.2.jar:3.0.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:432) ~[spring-boot-3.0.2.jar:3.0.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-3.0.2.jar:3.0.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1302) ~[spring-boot-3.0.2.jar:3.0.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1291) ~[spring-boot-3.0.2.jar:3.0.2]
+	at com.example.spring4.Spring4Application.main(Spring4Application.java:20) ~[main/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-3.0.2.jar:3.0.2]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception with message: Failed to parse mapping resource: 'file [C:\New_java\I-C-SpringBoot\spring0-mybatis\spring0-mybatis\build\resources\main\mapper\BoardMapper.xml]'
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:171) ~[spring-beans-6.0.4.jar:6.0.4]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-6.0.4.jar:6.0.4]
+	... 24 common frames omitted
+Caused by: java.io.IOException: Failed to parse mapping resource: 'file [C:\New_java\I-C-SpringBoot\spring0-mybatis\spring0-mybatis\build\resources\main\mapper\BoardMapper.xml]'
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:615) ~[mybatis-spring-3.0.1.jar:3.0.1]
+	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:492) ~[mybatis-spring-3.0.1.jar:3.0.1]
+	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:635) ~[mybatis-spring-3.0.1.jar:3.0.1]
+	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration.sqlSessionFactory(MybatisAutoConfiguration.java:189) ~[mybatis-spring-boot-autoconfigure-3.0.1.jar:3.0.1]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:139) ~[spring-beans-6.0.4.jar:6.0.4]
+	... 25 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [C:\New_java\I-C-SpringBoot\spring0-mybatis\spring0-mybatis\build\resources\main\mapper\BoardMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.example.spring4.board.vo.BoardVO'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.example.spring4.board.vo.BoardVO
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:123) ~[mybatis-3.5.11.jar:3.5.11]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:95) ~[mybatis-3.5.11.jar:3.5.11]
+	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:613) ~[mybatis-spring-3.0.1.jar:3.0.1]
+	... 33 common frames omitted
+Caused by: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.example.spring4.board.vo.BoardVO'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.example.spring4.board.vo.BoardVO
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:118) ~[mybatis-3.5.11.jar:3.5.11]
+	at org.apache.ibatis.builder.xml.XMLStatementBuilder.parseStatementNode(XMLStatementBuilder.java:76) ~[mybatis-3.5.11.jar:3.5.11]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:138) ~[mybatis-3.5.11.jar:3.5.11]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildStatementFromContext(XMLMapperBuilder.java:131) ~[mybatis-3.5.11.jar:3.5.11]
+	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:121) ~[mybatis-3.5.11.jar:3.5.11]
+	... 35 common frames omitted
+Caused by: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.example.spring4.board.vo.BoardVO'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.example.spring4.board.vo.BoardVO
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:128) ~[mybatis-3.5.11.jar:3.5.11]
+	at org.apache.ibatis.builder.BaseBuilder.resolveAlias(BaseBuilder.java:149) ~[mybatis-3.5.11.jar:3.5.11]
+	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:116) ~[mybatis-3.5.11.jar:3.5.11]
+	... 39 common frames omitted
+Caused by: java.lang.ClassNotFoundException: Cannot find class: com.example.spring4.board.vo.BoardVO
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:196) ~[mybatis-3.5.11.jar:3.5.11]
+	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89) ~[mybatis-3.5.11.jar:3.5.11]
+	at org.apache.ibatis.io.Resources.classForName(Resources.java:261) ~[mybatis-3.5.11.jar:3.5.11]
+	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:124) ~[mybatis-3.5.11.jar:3.5.11]
+	... 41 common frames omitted
+2025-01-02 17:41:44 [restartedMain] INFO  c.example.spring4.Spring4Application - Starting Spring4Application using Java 17 with PID 14580 (C:\New_java\I-C-SpringBoot\spring0-mybatis\spring0-mybatis\build\classes\java\main started by a in C:\New_java\I-C-SpringBoot\spring0-mybatis)
+2025-01-02 17:41:44 [restartedMain] DEBUG c.example.spring4.Spring4Application - Running with Spring Boot v3.0.2, Spring v6.0.4
+2025-01-02 17:41:44 [restartedMain] INFO  c.example.spring4.Spring4Application - No active profile set, falling back to 1 default profile: "default"
+2025-01-02 17:41:44 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-02 17:41:44 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-02 17:41:45 [restartedMain] DEBUG o.m.s.b.a.MybatisAutoConfiguration - Searching for mappers annotated with @Mapper
+2025-01-02 17:41:45 [restartedMain] DEBUG o.m.s.b.a.MybatisAutoConfiguration - Using auto-configuration base package 'com.example.spring4'
+2025-01-02 17:41:45 [restartedMain] DEBUG o.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2025-01-02 17:41:45 [restartedMain] DEBUG o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\New_java\I-C-SpringBoot\spring0-mybatis\spring0-mybatis\build\classes\java\main\com\example\spring4\board\dao\BoardMapper.class]
+2025-01-02 17:41:45 [restartedMain] DEBUG o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\New_java\I-C-SpringBoot\spring0-mybatis\spring0-mybatis\build\classes\java\main\com\example\spring4\member\dao\MemberMapper.class]
+2025-01-02 17:41:45 [restartedMain] DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'boardMapper' and 'com.example.spring4.board.dao.BoardMapper' mapperInterface
+2025-01-02 17:41:45 [restartedMain] DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'memberMapper' and 'com.example.spring4.member.dao.MemberMapper' mapperInterface
+2025-01-02 17:41:46 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2025-01-02 17:41:46 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-01-02 17:41:46 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.5]
+2025-01-02 17:41:46 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-01-02 17:41:46 [restartedMain] DEBUG o.s.w.f.ServerHttpObservationFilter - Filter 'serverHttpObservationFilter' configured for use
+2025-01-02 17:41:46 [restartedMain] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\New_java\I-C-SpringBoot\spring0-mybatis\spring0-mybatis\build\resources\main\mapper\BoardMapper.xml]'
+2025-01-02 17:41:46 [restartedMain] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\New_java\I-C-SpringBoot\spring0-mybatis\spring0-mybatis\build\resources\main\mapper\memberMapper.xml]'
+2025-01-02 17:41:46 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-01-02 17:41:46 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2025-01-02 17:41:46 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 16 mappings in 'requestMappingHandlerMapping'
+2025-01-02 17:41:46 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-01-02 17:41:46 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-01-02 17:41:46 [restartedMain] DEBUG o.m.s.b.a.MybatisAutoConfiguration - Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+2025-01-02 17:41:47 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-01-02 17:41:47 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-01-02 17:41:47 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2025-01-02 17:41:47 [restartedMain] INFO  c.example.spring4.Spring4Application - Started Spring4Application in 4.543 seconds (process running for 5.49)
+2025-01-02 17:41:47 [RMI TCP Connection(3)-192.168.56.1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-02 17:41:47 [RMI TCP Connection(3)-192.168.56.1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-01-02 17:41:47 [RMI TCP Connection(3)-192.168.56.1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2025-01-02 17:41:47 [RMI TCP Connection(3)-192.168.56.1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2025-01-02 17:41:47 [RMI TCP Connection(3)-192.168.56.1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2025-01-02 17:41:47 [RMI TCP Connection(3)-192.168.56.1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@4729c2ce
+2025-01-02 17:41:47 [RMI TCP Connection(2)-192.168.56.1] INFO  com.zaxxer.hikari.HikariDataSource - MyHikariPool Alive Connection =========== 10 =========== - Starting...
+2025-01-02 17:41:47 [RMI TCP Connection(3)-192.168.56.1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@15da3b7a
+2025-01-02 17:41:47 [RMI TCP Connection(3)-192.168.56.1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-01-02 17:41:47 [RMI TCP Connection(3)-192.168.56.1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2025-01-02 17:41:47 [RMI TCP Connection(2)-192.168.56.1] INFO  com.zaxxer.hikari.pool.HikariPool - MyHikariPool Alive Connection =========== 10 =========== - Added connection com.mysql.cj.jdbc.ConnectionImpl@cdeb0b0
+2025-01-02 17:41:47 [RMI TCP Connection(2)-192.168.56.1] INFO  com.zaxxer.hikari.HikariDataSource - MyHikariPool Alive Connection =========== 10 =========== - Start completed.
+2025-01-02 17:41:49 [http-nio-8888-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+2025-01-02 17:41:49 [http-nio-8888-exec-1] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-01-02 17:41:51 [http-nio-8888-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:41:51 [http-nio-8888-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/style.css", parameters={}
+2025-01-02 17:41:51 [http-nio-8888-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/coffee.png", parameters={}
+2025-01-02 17:41:51 [http-nio-8888-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:41:51 [http-nio-8888-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:41:51 [http-nio-8888-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:41:51 [http-nio-8888-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:41:51 [http-nio-8888-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/scripts.js", parameters={}
+2025-01-02 17:41:51 [http-nio-8888-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:41:51 [http-nio-8888-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/bye.png", parameters={}
+2025-01-02 17:41:51 [http-nio-8888-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/member.png", parameters={}
+2025-01-02 17:41:51 [http-nio-8888-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/cart.png", parameters={}
+2025-01-02 17:41:51 [http-nio-8888-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:41:51 [http-nio-8888-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/board.png", parameters={}
+2025-01-02 17:41:51 [http-nio-8888-exec-8] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:41:51 [http-nio-8888-exec-5] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:41:51 [http-nio-8888-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/product.png", parameters={}
+2025-01-02 17:41:51 [http-nio-8888-exec-6] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:41:51 [http-nio-8888-exec-10] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:41:51 [http-nio-8888-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:41:51 [http-nio-8888-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:41:51 [http-nio-8888-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:41:51 [http-nio-8888-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:41:51 [http-nio-8888-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:41:51 [http-nio-8888-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:41:51 [http-nio-8888-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/coffee.png", parameters={}
+2025-01-02 17:41:51 [http-nio-8888-exec-9] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:41:51 [http-nio-8888-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:41:51 [http-nio-8888-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/assets/favicon.ico", parameters={}
+2025-01-02 17:41:51 [http-nio-8888-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:41:51 [http-nio-8888-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:41:52 [http-nio-8888-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/board/board", parameters={}
+2025-01-02 17:41:52 [http-nio-8888-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.spring4.board.controller.BoardController#board(Model)
+2025-01-02 17:41:52 [http-nio-8888-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-02 17:41:52 [http-nio-8888-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@382d58c3] was not registered for synchronization because synchronization is not active
+2025-01-02 17:41:52 [http-nio-8888-exec-3] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1231767975 wrapping com.mysql.cj.jdbc.ConnectionImpl@cdeb0b0] will not be managed by Spring
+2025-01-02 17:41:52 [http-nio-8888-exec-3] DEBUG c.e.s.b.d.BoardMapper.selectBoardAll - ==>  Preparing: select no, title, content, writer from board ORDER BY no DESC
+2025-01-02 17:41:52 [http-nio-8888-exec-3] DEBUG c.e.s.b.d.BoardMapper.selectBoardAll - ==> Parameters: 
+2025-01-02 17:41:52 [http-nio-8888-exec-3] DEBUG c.e.s.b.d.BoardMapper.selectBoardAll - <==      Total: 11
+2025-01-02 17:41:52 [http-nio-8888-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@382d58c3]
+2025-01-02 17:41:52 [http-nio-8888-exec-3] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-01-02 17:41:53 [http-nio-8888-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:41:53 [http-nio-8888-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/style.css", parameters={}
+2025-01-02 17:41:53 [http-nio-8888-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:41:53 [http-nio-8888-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/coffee.png", parameters={}
+2025-01-02 17:41:53 [http-nio-8888-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:41:53 [http-nio-8888-exec-8] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:41:53 [http-nio-8888-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:41:53 [http-nio-8888-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/member.png", parameters={}
+2025-01-02 17:41:53 [http-nio-8888-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/bye.png", parameters={}
+2025-01-02 17:41:53 [http-nio-8888-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/product.png", parameters={}
+2025-01-02 17:41:53 [http-nio-8888-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:41:53 [http-nio-8888-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/board.png", parameters={}
+2025-01-02 17:41:53 [http-nio-8888-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/cart.png", parameters={}
+2025-01-02 17:41:53 [http-nio-8888-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:41:53 [http-nio-8888-exec-10] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:41:53 [http-nio-8888-exec-6] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:41:53 [http-nio-8888-exec-5] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:41:53 [http-nio-8888-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:41:53 [http-nio-8888-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:41:53 [http-nio-8888-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:41:53 [http-nio-8888-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:41:53 [http-nio-8888-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:41:53 [http-nio-8888-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/scripts.js", parameters={}
+2025-01-02 17:41:53 [http-nio-8888-exec-9] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:41:53 [http-nio-8888-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:41:53 [http-nio-8888-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/assets/favicon.ico", parameters={}
+2025-01-02 17:41:53 [http-nio-8888-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:41:53 [http-nio-8888-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:42:01 [http-nio-8888-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/", parameters={}
+2025-01-02 17:42:01 [http-nio-8888-exec-5] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-01-02 17:42:01 [http-nio-8888-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:42:01 [http-nio-8888-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/style.css", parameters={}
+2025-01-02 17:42:01 [http-nio-8888-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/coffee.png", parameters={}
+2025-01-02 17:42:01 [http-nio-8888-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:42:01 [http-nio-8888-exec-9] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:42:01 [http-nio-8888-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:42:01 [http-nio-8888-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:42:01 [http-nio-8888-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/scripts.js", parameters={}
+2025-01-02 17:42:01 [http-nio-8888-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:42:01 [http-nio-8888-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/bye.png", parameters={}
+2025-01-02 17:42:01 [http-nio-8888-exec-8] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:42:01 [http-nio-8888-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/product.png", parameters={}
+2025-01-02 17:42:01 [http-nio-8888-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/cart.png", parameters={}
+2025-01-02 17:42:01 [http-nio-8888-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/member.png", parameters={}
+2025-01-02 17:42:01 [http-nio-8888-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/board.png", parameters={}
+2025-01-02 17:42:01 [http-nio-8888-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:42:01 [http-nio-8888-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:42:01 [http-nio-8888-exec-10] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:42:01 [http-nio-8888-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:42:01 [http-nio-8888-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:42:01 [http-nio-8888-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:42:01 [http-nio-8888-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:42:01 [http-nio-8888-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:42:01 [http-nio-8888-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:42:01 [http-nio-8888-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:42:01 [http-nio-8888-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/coffee.png", parameters={}
+2025-01-02 17:42:01 [http-nio-8888-exec-6] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:42:01 [http-nio-8888-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:42:01 [http-nio-8888-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/assets/favicon.ico", parameters={}
+2025-01-02 17:42:01 [http-nio-8888-exec-5] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:42:01 [http-nio-8888-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:42:02 [http-nio-8888-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/board/board", parameters={}
+2025-01-02 17:42:02 [http-nio-8888-exec-7] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.spring4.board.controller.BoardController#board(Model)
+2025-01-02 17:42:02 [http-nio-8888-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-02 17:42:02 [http-nio-8888-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@157c5bd4] was not registered for synchronization because synchronization is not active
+2025-01-02 17:42:02 [http-nio-8888-exec-7] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@2058564968 wrapping com.mysql.cj.jdbc.ConnectionImpl@cdeb0b0] will not be managed by Spring
+2025-01-02 17:42:02 [http-nio-8888-exec-7] DEBUG c.e.s.b.d.BoardMapper.selectBoardAll - ==>  Preparing: select no, title, content, writer from board ORDER BY no DESC
+2025-01-02 17:42:02 [http-nio-8888-exec-7] DEBUG c.e.s.b.d.BoardMapper.selectBoardAll - ==> Parameters: 
+2025-01-02 17:42:02 [http-nio-8888-exec-7] DEBUG c.e.s.b.d.BoardMapper.selectBoardAll - <==      Total: 11
+2025-01-02 17:42:02 [http-nio-8888-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@157c5bd4]
+2025-01-02 17:42:02 [http-nio-8888-exec-7] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-01-02 17:42:02 [http-nio-8888-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:42:02 [http-nio-8888-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/coffee.png", parameters={}
+2025-01-02 17:42:02 [http-nio-8888-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/style.css", parameters={}
+2025-01-02 17:42:02 [http-nio-8888-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/scripts.js", parameters={}
+2025-01-02 17:42:02 [http-nio-8888-exec-9] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:42:02 [http-nio-8888-exec-8] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:42:02 [http-nio-8888-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:42:02 [http-nio-8888-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:42:02 [http-nio-8888-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:42:02 [http-nio-8888-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:42:02 [http-nio-8888-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/member.png", parameters={}
+2025-01-02 17:42:02 [http-nio-8888-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/bye.png", parameters={}
+2025-01-02 17:42:02 [http-nio-8888-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/board.png", parameters={}
+2025-01-02 17:42:02 [http-nio-8888-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/product.png", parameters={}
+2025-01-02 17:42:02 [http-nio-8888-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/cart.png", parameters={}
+2025-01-02 17:42:02 [http-nio-8888-exec-10] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:42:02 [http-nio-8888-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:42:02 [http-nio-8888-exec-6] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:42:02 [http-nio-8888-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:42:02 [http-nio-8888-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:42:02 [http-nio-8888-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:42:02 [http-nio-8888-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:42:02 [http-nio-8888-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:42:02 [http-nio-8888-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:42:02 [http-nio-8888-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:42:02 [http-nio-8888-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/assets/favicon.ico", parameters={}
+2025-01-02 17:42:02 [http-nio-8888-exec-5] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:42:02 [http-nio-8888-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:42:05 [http-nio-8888-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/member/member", parameters={}
+2025-01-02 17:42:05 [http-nio-8888-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.spring4.member.controller.MemberController#member()
+2025-01-02 17:42:05 [http-nio-8888-exec-3] INFO  c.e.s.m.controller.MemberController - 로그인 화면 요청 로그 기록 >>>>>>>>>
+2025-01-02 17:42:05 [http-nio-8888-exec-3] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-01-02 17:42:05 [http-nio-8888-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:42:05 [http-nio-8888-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/coffee.png", parameters={}
+2025-01-02 17:42:05 [http-nio-8888-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/style.css", parameters={}
+2025-01-02 17:42:05 [http-nio-8888-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:42:05 [http-nio-8888-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:42:05 [http-nio-8888-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:42:05 [http-nio-8888-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:42:05 [http-nio-8888-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/scripts.js", parameters={}
+2025-01-02 17:42:05 [http-nio-8888-exec-5] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:42:05 [http-nio-8888-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/board.png", parameters={}
+2025-01-02 17:42:05 [http-nio-8888-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/member.png", parameters={}
+2025-01-02 17:42:05 [http-nio-8888-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/product.png", parameters={}
+2025-01-02 17:42:05 [http-nio-8888-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/bye.png", parameters={}
+2025-01-02 17:42:05 [http-nio-8888-exec-10] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:42:05 [http-nio-8888-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/cart.png", parameters={}
+2025-01-02 17:42:05 [http-nio-8888-exec-9] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:42:05 [http-nio-8888-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:42:05 [http-nio-8888-exec-6] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:42:05 [http-nio-8888-exec-8] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:42:05 [http-nio-8888-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:42:05 [http-nio-8888-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:42:05 [http-nio-8888-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:42:05 [http-nio-8888-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:42:05 [http-nio-8888-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:42:05 [http-nio-8888-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:42:05 [http-nio-8888-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/assets/favicon.ico", parameters={}
+2025-01-02 17:42:05 [http-nio-8888-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:42:05 [http-nio-8888-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:42:08 [http-nio-8888-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - POST "/member/login", parameters={masked}
+2025-01-02 17:42:08 [http-nio-8888-exec-3] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.spring4.member.controller.MemberController#login(MemberVO, HttpSession, Model)
+2025-01-02 17:42:08 [http-nio-8888-exec-3] INFO  c.e.s.m.controller.MemberController - 로그인 정보 요청 기록 >>>>>>>>> MemberVO(id=apple, pw=1234, name=null, tel=null)
+2025-01-02 17:42:08 [http-nio-8888-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-02 17:42:08 [http-nio-8888-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5374495e] was not registered for synchronization because synchronization is not active
+2025-01-02 17:42:08 [http-nio-8888-exec-3] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1304474058 wrapping com.mysql.cj.jdbc.ConnectionImpl@cdeb0b0] will not be managed by Spring
+2025-01-02 17:42:08 [http-nio-8888-exec-3] DEBUG c.e.s.m.d.M.selectMemberById - ==>  Preparing: select * from member where id = ?
+2025-01-02 17:42:08 [http-nio-8888-exec-3] DEBUG c.e.s.m.d.M.selectMemberById - ==> Parameters: apple(String)
+2025-01-02 17:42:08 [http-nio-8888-exec-3] DEBUG c.e.s.m.d.M.selectMemberById - <==      Total: 1
+2025-01-02 17:42:08 [http-nio-8888-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5374495e]
+2025-01-02 17:42:08 [http-nio-8888-exec-3] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-01-02 17:42:08 [http-nio-8888-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:42:08 [http-nio-8888-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/style.css", parameters={}
+2025-01-02 17:42:08 [http-nio-8888-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:42:08 [http-nio-8888-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:42:08 [http-nio-8888-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/bye.png", parameters={}
+2025-01-02 17:42:08 [http-nio-8888-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/coffee.png;jsessionid=B45EE7D54D3689269373168D52B2A6FC", parameters={}
+2025-01-02 17:42:08 [http-nio-8888-exec-5] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:42:08 [http-nio-8888-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:42:08 [http-nio-8888-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:42:08 [http-nio-8888-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:42:08 [http-nio-8888-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/member.png", parameters={}
+2025-01-02 17:42:08 [http-nio-8888-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:42:08 [http-nio-8888-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/scripts.js;jsessionid=B45EE7D54D3689269373168D52B2A6FC", parameters={}
+2025-01-02 17:42:08 [http-nio-8888-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/product.png", parameters={}
+2025-01-02 17:42:08 [http-nio-8888-exec-9] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:42:08 [http-nio-8888-exec-10] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:42:08 [http-nio-8888-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/cart.png", parameters={}
+2025-01-02 17:42:08 [http-nio-8888-exec-6] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:42:08 [http-nio-8888-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/board.png", parameters={}
+2025-01-02 17:42:08 [http-nio-8888-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:42:08 [http-nio-8888-exec-8] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:42:08 [http-nio-8888-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:42:08 [http-nio-8888-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:42:08 [http-nio-8888-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:42:08 [http-nio-8888-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:42:08 [http-nio-8888-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/bye.png", parameters={}
+2025-01-02 17:42:08 [http-nio-8888-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:42:08 [http-nio-8888-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:42:08 [http-nio-8888-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/assets/favicon.ico", parameters={}
+2025-01-02 17:42:08 [http-nio-8888-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:42:08 [http-nio-8888-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:42:08 [http-nio-8888-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/board/board", parameters={}
+2025-01-02 17:42:08 [http-nio-8888-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.spring4.board.controller.BoardController#board(Model)
+2025-01-02 17:42:08 [http-nio-8888-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-02 17:42:08 [http-nio-8888-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@40a323c2] was not registered for synchronization because synchronization is not active
+2025-01-02 17:42:08 [http-nio-8888-exec-2] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@2021080021 wrapping com.mysql.cj.jdbc.ConnectionImpl@cdeb0b0] will not be managed by Spring
+2025-01-02 17:42:08 [http-nio-8888-exec-2] DEBUG c.e.s.b.d.BoardMapper.selectBoardAll - ==>  Preparing: select no, title, content, writer from board ORDER BY no DESC
+2025-01-02 17:42:08 [http-nio-8888-exec-2] DEBUG c.e.s.b.d.BoardMapper.selectBoardAll - ==> Parameters: 
+2025-01-02 17:42:08 [http-nio-8888-exec-2] DEBUG c.e.s.b.d.BoardMapper.selectBoardAll - <==      Total: 11
+2025-01-02 17:42:08 [http-nio-8888-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@40a323c2]
+2025-01-02 17:42:08 [http-nio-8888-exec-2] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-01-02 17:42:08 [http-nio-8888-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:42:08 [http-nio-8888-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/style.css", parameters={}
+2025-01-02 17:42:08 [http-nio-8888-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/scripts.js", parameters={}
+2025-01-02 17:42:08 [http-nio-8888-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/coffee.png", parameters={}
+2025-01-02 17:42:08 [http-nio-8888-exec-5] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:42:08 [http-nio-8888-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:42:08 [http-nio-8888-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:42:08 [http-nio-8888-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:42:08 [http-nio-8888-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:42:08 [http-nio-8888-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:42:08 [http-nio-8888-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/bye.png", parameters={}
+2025-01-02 17:42:08 [http-nio-8888-exec-10] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:42:08 [http-nio-8888-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/member.png", parameters={}
+2025-01-02 17:42:08 [http-nio-8888-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/product.png", parameters={}
+2025-01-02 17:42:08 [http-nio-8888-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/board.png", parameters={}
+2025-01-02 17:42:08 [http-nio-8888-exec-9] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:42:08 [http-nio-8888-exec-8] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:42:08 [http-nio-8888-exec-6] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:42:08 [http-nio-8888-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/cart.png", parameters={}
+2025-01-02 17:42:08 [http-nio-8888-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:42:08 [http-nio-8888-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:42:08 [http-nio-8888-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:42:08 [http-nio-8888-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:42:08 [http-nio-8888-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:42:08 [http-nio-8888-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:42:08 [http-nio-8888-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/assets/favicon.ico", parameters={}
+2025-01-02 17:42:08 [http-nio-8888-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:42:08 [http-nio-8888-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:42:10 [http-nio-8888-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/board/create", parameters={}
+2025-01-02 17:42:10 [http-nio-8888-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.spring4.board.controller.BoardController#create()
+2025-01-02 17:42:10 [http-nio-8888-exec-2] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-01-02 17:42:10 [http-nio-8888-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:42:10 [http-nio-8888-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/style.css", parameters={}
+2025-01-02 17:42:10 [http-nio-8888-exec-1] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:42:10 [http-nio-8888-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:42:10 [http-nio-8888-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/coffee.png", parameters={}
+2025-01-02 17:42:10 [http-nio-8888-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/scripts.js", parameters={}
+2025-01-02 17:42:10 [http-nio-8888-exec-5] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:42:10 [http-nio-8888-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:42:10 [http-nio-8888-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:42:10 [http-nio-8888-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:42:10 [http-nio-8888-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/bye.png", parameters={}
+2025-01-02 17:42:10 [http-nio-8888-exec-10] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:42:10 [http-nio-8888-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/member.png", parameters={}
+2025-01-02 17:42:10 [http-nio-8888-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/product.png", parameters={}
+2025-01-02 17:42:10 [http-nio-8888-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/cart.png", parameters={}
+2025-01-02 17:42:10 [http-nio-8888-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/board.png", parameters={}
+2025-01-02 17:42:10 [http-nio-8888-exec-9] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:42:10 [http-nio-8888-exec-8] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:42:10 [http-nio-8888-exec-6] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:42:10 [http-nio-8888-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:42:10 [http-nio-8888-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:42:10 [http-nio-8888-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:42:10 [http-nio-8888-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:42:10 [http-nio-8888-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:42:10 [http-nio-8888-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:42:10 [http-nio-8888-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/assets/favicon.ico", parameters={}
+2025-01-02 17:42:10 [http-nio-8888-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:42:10 [http-nio-8888-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:42:12 [http-nio-8888-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - POST "/board/create2", parameters={masked}
+2025-01-02 17:42:12 [http-nio-8888-exec-2] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.spring4.board.controller.BoardController#create2(BoardVO)
+2025-01-02 17:42:12 [http-nio-8888-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-02 17:42:12 [http-nio-8888-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6f2b2818] was not registered for synchronization because synchronization is not active
+2025-01-02 17:42:12 [http-nio-8888-exec-2] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@2061105401 wrapping com.mysql.cj.jdbc.ConnectionImpl@cdeb0b0] will not be managed by Spring
+2025-01-02 17:42:12 [http-nio-8888-exec-2] DEBUG c.e.s.b.dao.BoardMapper.insertBoard - ==>  Preparing: INSERT INTO board (title, content, writer) Values (?, ?, ?)
+2025-01-02 17:42:12 [http-nio-8888-exec-2] DEBUG c.e.s.b.dao.BoardMapper.insertBoard - ==> Parameters: 123(String), 123(String), apple(String)
+2025-01-02 17:42:12 [http-nio-8888-exec-2] DEBUG c.e.s.b.dao.BoardMapper.insertBoard - <==    Updates: 1
+2025-01-02 17:42:12 [http-nio-8888-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6f2b2818]
+2025-01-02 17:42:12 [http-nio-8888-exec-2] DEBUG o.s.web.servlet.view.RedirectView - View name 'redirect:', model {}
+2025-01-02 17:42:12 [http-nio-8888-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 302 FOUND
+2025-01-02 17:42:12 [http-nio-8888-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - GET "/board/board", parameters={}
+2025-01-02 17:42:12 [http-nio-8888-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.example.spring4.board.controller.BoardController#board(Model)
+2025-01-02 17:42:12 [http-nio-8888-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-02 17:42:12 [http-nio-8888-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@18334e9e] was not registered for synchronization because synchronization is not active
+2025-01-02 17:42:12 [http-nio-8888-exec-1] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1411079471 wrapping com.mysql.cj.jdbc.ConnectionImpl@cdeb0b0] will not be managed by Spring
+2025-01-02 17:42:12 [http-nio-8888-exec-1] DEBUG c.e.s.b.d.BoardMapper.selectBoardAll - ==>  Preparing: select no, title, content, writer from board ORDER BY no DESC
+2025-01-02 17:42:12 [http-nio-8888-exec-1] DEBUG c.e.s.b.d.BoardMapper.selectBoardAll - ==> Parameters: 
+2025-01-02 17:42:12 [http-nio-8888-exec-1] DEBUG c.e.s.b.d.BoardMapper.selectBoardAll - <==      Total: 12
+2025-01-02 17:42:12 [http-nio-8888-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@18334e9e]
+2025-01-02 17:42:12 [http-nio-8888-exec-1] DEBUG o.s.w.s.v.ContentNegotiatingViewResolver - Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2025-01-02 17:42:12 [http-nio-8888-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:42:12 [http-nio-8888-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - GET "/css/style.css", parameters={}
+2025-01-02 17:42:12 [http-nio-8888-exec-4] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:42:12 [http-nio-8888-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/coffee.png", parameters={}
+2025-01-02 17:42:12 [http-nio-8888-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - GET "/js/scripts.js", parameters={}
+2025-01-02 17:42:12 [http-nio-8888-exec-5] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:42:12 [http-nio-8888-exec-4] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:42:12 [http-nio-8888-exec-10] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:42:12 [http-nio-8888-exec-5] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:42:12 [http-nio-8888-exec-10] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:42:12 [http-nio-8888-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/bye.png", parameters={}
+2025-01-02 17:42:12 [http-nio-8888-exec-9] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:42:12 [http-nio-8888-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/member.png", parameters={}
+2025-01-02 17:42:12 [http-nio-8888-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/product.png", parameters={}
+2025-01-02 17:42:12 [http-nio-8888-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/board.png", parameters={}
+2025-01-02 17:42:12 [http-nio-8888-exec-6] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:42:12 [http-nio-8888-exec-8] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:42:12 [http-nio-8888-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - GET "/img/cart.png", parameters={}
+2025-01-02 17:42:12 [http-nio-8888-exec-7] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:42:12 [http-nio-8888-exec-3] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:42:12 [http-nio-8888-exec-9] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:42:12 [http-nio-8888-exec-8] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:42:12 [http-nio-8888-exec-6] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:42:12 [http-nio-8888-exec-7] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:42:12 [http-nio-8888-exec-3] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:42:12 [http-nio-8888-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - GET "/assets/favicon.ico", parameters={}
+2025-01-02 17:42:12 [http-nio-8888-exec-2] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2025-01-02 17:42:12 [http-nio-8888-exec-2] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-01-02 17:45:44 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 32 class path changes (0 additions, 0 deletions, 32 modifications)
+2025-01-02 17:45:44 [Thread-5] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2025-01-02 17:45:44 [Thread-5] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2025-01-02 17:45:44 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - MyHikariPool Alive Connection =========== 10 =========== - Shutdown initiated...
+2025-01-02 17:45:44 [Thread-5] INFO  com.zaxxer.hikari.HikariDataSource - MyHikariPool Alive Connection =========== 10 =========== - Shutdown completed.
+2025-01-02 17:45:44 [restartedMain] INFO  c.example.spring4.Spring4Application - Starting Spring4Application using Java 17 with PID 14580 (C:\New_java\I-C-SpringBoot\spring0-mybatis\spring0-mybatis\build\classes\java\main started by a in C:\New_java\I-C-SpringBoot\spring0-mybatis)
+2025-01-02 17:45:44 [restartedMain] DEBUG c.example.spring4.Spring4Application - Running with Spring Boot v3.0.2, Spring v6.0.4
+2025-01-02 17:45:44 [restartedMain] INFO  c.example.spring4.Spring4Application - No active profile set, falling back to 1 default profile: "default"
+2025-01-02 17:45:45 [restartedMain] DEBUG o.m.s.b.a.MybatisAutoConfiguration - Searching for mappers annotated with @Mapper
+2025-01-02 17:45:45 [restartedMain] DEBUG o.m.s.b.a.MybatisAutoConfiguration - Using auto-configuration base package 'com.example.spring4'
+2025-01-02 17:45:45 [restartedMain] DEBUG o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\New_java\I-C-SpringBoot\spring0-mybatis\spring0-mybatis\build\classes\java\main\com\example\spring4\board\dao\BoardMapper.class]
+2025-01-02 17:45:45 [restartedMain] DEBUG o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\New_java\I-C-SpringBoot\spring0-mybatis\spring0-mybatis\build\classes\java\main\com\example\spring4\member\dao\MemberMapper.class]
+2025-01-02 17:45:45 [restartedMain] DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'boardMapper' and 'com.example.spring4.board.dao.BoardMapper' mapperInterface
+2025-01-02 17:45:45 [restartedMain] DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'memberMapper' and 'com.example.spring4.member.dao.MemberMapper' mapperInterface
+2025-01-02 17:45:45 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2025-01-02 17:45:45 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-01-02 17:45:45 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.5]
+2025-01-02 17:45:45 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-01-02 17:45:45 [restartedMain] DEBUG o.s.w.f.ServerHttpObservationFilter - Filter 'serverHttpObservationFilter' configured for use
+2025-01-02 17:45:45 [restartedMain] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\New_java\I-C-SpringBoot\spring0-mybatis\spring0-mybatis\build\resources\main\mapper\BoardMapper.xml]'
+2025-01-02 17:45:45 [restartedMain] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\New_java\I-C-SpringBoot\spring0-mybatis\spring0-mybatis\build\resources\main\mapper\memberMapper.xml]'
+2025-01-02 17:45:45 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerAdapter - ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2025-01-02 17:45:45 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2025-01-02 17:45:45 [restartedMain] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - 16 mappings in 'requestMappingHandlerMapping'
+2025-01-02 17:45:45 [restartedMain] DEBUG o.s.w.s.h.SimpleUrlHandlerMapping - Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-01-02 17:45:45 [restartedMain] DEBUG o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2025-01-02 17:45:45 [restartedMain] DEBUG o.m.s.b.a.MybatisAutoConfiguration - Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
+2025-01-02 17:45:45 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-01-02 17:45:45 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-01-02 17:45:45 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2025-01-02 17:45:45 [restartedMain] INFO  c.example.spring4.Spring4Application - Started Spring4Application in 1.171 seconds (process running for 244.12)
+2025-01-02 17:45:45 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged

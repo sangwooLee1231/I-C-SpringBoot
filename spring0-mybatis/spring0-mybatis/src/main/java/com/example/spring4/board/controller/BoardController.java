@@ -2,7 +2,6 @@ package com.example.spring4.board.controller;
 
 import com.example.spring4.board.service.BoardService;
 import com.example.spring4.board.vo.BoardVO;
-import jakarta.servlet.http.HttpSession;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -18,12 +17,11 @@ import java.util.List;
 public class BoardController {
 
     private final BoardService boardService;
-    private com.example.spring4.board.vo.BoardVO BoardVO;
 
     @GetMapping("board") //contextpath/board/board
     public String board(Model model) {
         System.out.println("board 화면 요청>>>>>>>>>>>>>>>> ");
-        List<BoardVO> list = boardService.selectBoardAll();
+        List<BoardVO> list = boardService.selectAllBoard();
         System.out.println("list.size() " + list.size());
         System.out.println("-------------list--------");
         System.out.println(list);
@@ -39,7 +37,7 @@ public class BoardController {
 
     @PostMapping("create2")
     public String create2(BoardVO boardVO) {
-       int result = boardService.insertBoard(boardVO); // result를 예외처리 하기위해 생성
+        int result = boardService.insertBoard(boardVO); // result를 예외처리 하기위해 생성
         if(result >0) {
             return "redirect:/board/board";
         } else {
@@ -55,39 +53,5 @@ public class BoardController {
         model.addAttribute("boardVO", BoardVO);
         return "board/read";
     }
-
-    @GetMapping("update")
-    public String update(int no,Model model) {
-        BoardVO BoardVO = boardService.selectBoardByNo(no);
-        model.addAttribute("boardVO", BoardVO);
-
-        return "board/update";
-
-    }
-
-    @PostMapping("update2")
-    public String update2(BoardVO boardVO) {
-        System.out.println(boardVO); //
-        int result = boardService.updateBoard(boardVO);
-        System.out.println("result " + result);
-        if(result > 0) {
-            return "/board/update2";
-        } else {
-            return "/error/error";
-        }
-    }
-
-    @GetMapping("delete")
-    public String delete(int no) {
-        int result = boardService.deleteBoard(no);
-        if(result >0) {
-            return "redirect:/board/board";
-        } else {
-            return "/error/error";
-        }
-    }
-
-
-
 
 }

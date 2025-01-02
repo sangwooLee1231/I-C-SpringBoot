@@ -48,6 +48,10 @@ public class MemberService {
     public int update(MemberVO memberVO) {
         return memberMapper.updateMember(memberVO);
     }
+
+    public int delete(String id) {
+        return memberMapper.deleteMember(id);
+    }
     //요청하나당 함수하나
     //처리내용
     // - 전처리하고 나서
