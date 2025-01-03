@@ -51,7 +51,6 @@ public class BoardController {
     @GetMapping("read")
     public String read(int no, Model model) {
         BoardVO BoardVO = boardService.selectBoardByNo(no);
-
         model.addAttribute("boardVO", BoardVO);
         return "board/read";
     }
@@ -86,6 +85,8 @@ public class BoardController {
             return "/error/error";
         }
     }
+
+
 
 
 

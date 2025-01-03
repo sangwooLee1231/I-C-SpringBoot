@@ -3,6 +3,7 @@ package com.example.spring4.member.service;
 import com.example.spring4.member.dao.MemberMapper;
 import com.example.spring4.member.vo.MemberVO;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -14,13 +15,22 @@ public class MemberService {
     private final MemberMapper memberMapper; //200(DI)
     private final PasswordEncoder passwordEncoder; //300(DI)
 
+//    @Autowired
+//    public MemberService(MemberMapper memberMapper, PasswordEncoder passwordEncoder) {
+//        this.memberMapper = memberMapper;
+//        this.passwordEncoder = passwordEncoder;
+//    } --> RequiredArgsConstructor 세부 내용
+//    객체생성시 생성자 호출할 때 생성자의 파라메터 값으로 두 개의 주소를 찾아서 멤버변수에 넣어주는 방식
+//    생성자 주입 방식
+
+
     public boolean login(MemberVO memberVO) {
         //전처리하고
         //dao를 찾아서 --> ok
         //dao.메서드 호출
         MemberVO memberVO1 = memberMapper.selectMemberById(memberVO.getId());
         if (memberVO1 != null) {
-            if (memberVO1.getPw().equals(memberVO.getPw())) {
+            if (passwordEncoder.matches(memberVO.getPw(), memberVO1.getPw())) {
                 return true; //로그인 성공
             } else {
                 return false; //로그인 실패
@@ -51,6 +61,14 @@ public class MemberService {
 
     public int delete(String id) {
         return memberMapper.deleteMember(id);
+    }
+
+    public boolean checkId(String id) {
+        return memberMapper.selectMemberById(id) == null;
+        // 가입하려고 하는 id를 갖고 검색을 해서 null이 아니면
+        // 이 아이디로 이미 가입이 되어있다라는 얘기임.
+        // null이면 이 id로 가입한 사람이 없다라는 얘기 ==> 사용할 수 있는 아이디로 처리
+        // 이 아이디로 이미 가입이 되어있다는 얘기 ==> 사용할 수 있는 아이디로 처리
     }
     //요청하나당 함수하나
     //처리내용
